@@ -1,0 +1,11 @@
+body {
+    padding-bottom: 70px;
+}
+
+.white {
+  background-color: #FFF;
+}
+
+hr.blue {
+  border-color: #095488;
+}

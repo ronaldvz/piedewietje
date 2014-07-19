@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="container white">
+    <div class="row">&nbsp;</div>	
+    <div class="row">
+      <h1 class="text-center text-uppercase">{{ site.title }} <small>{{site.titlesub}}</small></h1>
+    </div>
+
+
+    {% for post in site.posts %}
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="blue">
+                <h2 class="text-center text-uppercase"><a href="{{post.url}}">{{post.title}}/ <small>{{post.titlenl}}</small></a></h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <a href="/toiletry-bag-large.html"><img src="http://placekitten.com/1280/300" class="img-responsive"></a>
+            </div>
+        </div>
+    {% endfor %}
+
+</div>
+  
+<div class="container white">
+  <div class="row"><br/></div>
+</div>
