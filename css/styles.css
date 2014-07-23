@@ -27,6 +27,20 @@ hr.blue {
   border-color: #095488;
 }
 
+.mainlogo {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    z-index: 15;
+    width: 220px;
+    margin-left: -86px;
+}
+
+.spacermainlogo {
+    height: 220px;
+
+}
+
 small, em {
     font-family: 'SourceSansPro-ExtraLightIt', serif;
     font-style: italic;
