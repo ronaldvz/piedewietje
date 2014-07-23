@@ -1,4 +1,21 @@
+@font-face {
+  font-family: '`SourceSansPro-ExtraLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SourceSansPro-ExtraLight'), url('http://piedewietje.nl/css/fonts/SourceSansPro-ExtraLight.otf') format('truetype');
+}
+
+
+@font-face {
+  font-family: '`SourceSansPro-ExtraLightIt';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SourceSansPro-ExtraLightIt'), url('http://piedewietje.nl/css/fonts/SourceSansPro-ExtraLightIt.otf') format('truetype');
+}
+
+
 body {
+    font-family: 'SourceSansPro-ExtraLight', serif;
     padding-bottom: 70px;
 }
 
@@ -8,4 +25,9 @@ body {
 
 hr.blue {
   border-color: #095488;
+}
+
+small, em {
+    font-family: 'SourceSansPro-ExtraLightIt', serif;
+    font-style: italic;
 }
