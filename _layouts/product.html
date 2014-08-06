@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="container white col-md-8 col-md-offset-2">
+<div class="container white col-lg-8 col-lg-offset-2">
     <div class="row">&nbsp;</div>
     
     <div class="row">
@@ -11,82 +11,79 @@ layout: default
     </div>
     
     <div class="row">
-        <div col="col-md-10 col-md-offset-1">
+        <div col="col-lg-10 col-lg-offset-1">
             <hr class="blue">
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6">
             <h2 class="text-uppercase">{{ page.title }}</h2>
             {{ content }}
         </div>
 
-                    <div class="col-md-6">
-				  
-                        {% if page.caroussel1 %} 
-                            <h4 class="text-right text-uppercase">{{page.caroussel1.title}}</h4>
-                            <div id="{{page.caroussel1.cssid}}" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    {% for image in page.caroussel1.images %}
-                                    <li data-target="#{{page.caroussel1.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
-                                    {% endfor %}
-                                </ol>
+        <div class="col-lg-6">
+      
+            {% if page.caroussel1 %} 
+                <h4 class="text-right text-uppercase">{{page.caroussel1.title}}</h4>
+                <div id="{{page.caroussel1.cssid}}" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        {% for image in page.caroussel1.images %}
+                        <li data-target="#{{page.caroussel1.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
+                        {% endfor %}
+                    </ol>
 
-                                <div class="carousel-inner">
-                                    {% for image in page.caroussel1.images %}
-                                        <div class="item {% if forloop.first %}active {% endif %}">
-                                            <img src="{{image}}" class="img-responsive" />
-                                        </div>
-                                    {% endfor %}
-                                </div>
+                    <div class="carousel-inner">
+                        {% for image in page.caroussel1.images %}
+                            <div class="item {% if forloop.first %}active {% endif %}">
+                                <img src="{{image}}" class="img-responsive" />
                             </div>
-                        {% endif %}
-
-
-                        {% if page.caroussel2 %} 
-                            <h4 class="text-right text-uppercase">{{page.caroussel2.title}}</h4>
-                            <div id="{{page.caroussel2.cssid}}" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    {% for image in page.caroussel2.images %}
-                                    <li data-target="#{{page.caroussel2.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
-                                    {% endfor %}
-                                </ol>
-
-                                <div class="carousel-inner">
-                                    {% for image in page.caroussel2.images %}
-                                        <div class="item {% if forloop.first %}active {% endif %}">
-                                            <img src="{{image}}" class="img-responsive" />
-                                        </div>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        {% endif %}
-
-
-                        {% if page.caroussel3 %} 
-                                <h4 class="text-right text-uppercase">{{page.caroussel3.title}}</h4>
-                                <div id="{{page.caroussel3.cssid}}" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        {% for image in page.caroussel3.images %}
-                                        <li data-target="#{{page.caroussel3.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
-                                        {% endfor %}
-                                    </ol>
-
-                                    <div class="carousel-inner">
-                                        {% for image in page.caroussel3.images %}
-                                            <div class="item {% if forloop.first %}active {% endif %}">
-                                                <img src="{{image}}" class="img-responsive" />
-                                            </div>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                        {% endif %}
-
+                        {% endfor %}
                     </div>
                 </div>
-                <div class="row">&nbsp;</div>
-            </div>
+            {% endif %}
+
+
+            {% if page.caroussel2 %} 
+                <h4 class="text-right text-uppercase">{{page.caroussel2.title}}</h4>
+                <div id="{{page.caroussel2.cssid}}" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        {% for image in page.caroussel2.images %}
+                        <li data-target="#{{page.caroussel2.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
+                        {% endfor %}
+                    </ol>
+
+                    <div class="carousel-inner">
+                        {% for image in page.caroussel2.images %}
+                            <div class="item {% if forloop.first %}active {% endif %}">
+                                <img src="{{image}}" class="img-responsive" />
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+
+            {% if page.caroussel3 %} 
+                <h4 class="text-right text-uppercase">{{page.caroussel3.title}}</h4>
+                <div id="{{page.caroussel3.cssid}}" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        {% for image in page.caroussel3.images %}
+                        <li data-target="#{{page.caroussel3.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
+                        {% endfor %}
+                    </ol>
+
+                    <div class="carousel-inner">
+                        {% for image in page.caroussel3.images %}
+                            <div class="item {% if forloop.first %}active {% endif %}">
+                                <img src="{{image}}" class="img-responsive" />
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
         </div>
     </div>
+    <div class="row">&nbsp;</div>
 </div>
