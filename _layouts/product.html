@@ -20,18 +20,57 @@ layout: default
 
                     <div class="col-md-5">
 				  
-                        <!-- darkblue carousel -->
                         {% if page.caroussel1 %} 
-                                <h4 class="text-right text-uppercase">{{page.caroussel1.title}}</h4>
-                                <div id="{{page.caroussel1.title}}" class="carousel slide" data-ride="carousel">
+                            <h4 class="text-right text-uppercase">{{page.caroussel1.title}}</h4>
+                            <div id="{{page.caroussel1.cssid}}" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    {% for image in page.caroussel1.images %}
+                                    <li data-target="#{{page.caroussel1.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
+                                    {% endfor %}
+                                </ol>
+
+                                <div class="carousel-inner">
+                                    {% for image in page.caroussel1.images %}
+                                        <div class="item {% if forloop.first %}active {% endif %}">
+                                            <img src="{{image}}" class="img-responsive" />
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endif %}
+
+
+                        {% if page.caroussel2 %} 
+                            <h4 class="text-right text-uppercase">{{page.caroussel2.title}}</h4>
+                            <div id="{{page.caroussel2.cssid}}" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    {% for image in page.caroussel2.images %}
+                                    <li data-target="#{{page.caroussel2.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
+                                    {% endfor %}
+                                </ol>
+
+                                <div class="carousel-inner">
+                                    {% for image in page.caroussel2.images %}
+                                        <div class="item {% if forloop.first %}active {% endif %}">
+                                            <img src="{{image}}" class="img-responsive" />
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endif %}
+
+
+                        {% if page.caroussel3 %} 
+                                <h4 class="text-right text-uppercase">{{page.caroussel3.title}}</h4>
+                                <div id="{{page.caroussel3.cssid}}" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
-                                        <li data-target="#{{page.caroussel1.title}}" data-slide-to="0" class="active"></li>
-                                        <li data-target="#{{page.caroussel1.title}}" data-slide-to="1"></li>
-                                        <li data-target="#{{page.caroussel1.title}}" data-slide-to="2"></li>
+                                        {% for image in page.caroussel3.images %}
+                                        <li data-target="#{{page.caroussel3.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
+                                        {% endfor %}
                                     </ol>
 
                                     <div class="carousel-inner">
-                                        {% for image in page.caroussel1.images %}
+                                        {% for image in page.caroussel3.images %}
                                             <div class="item {% if forloop.first %}active {% endif %}">
                                                 <img src="{{image}}" class="img-responsive" />
                                             </div>
@@ -39,6 +78,7 @@ layout: default
                                     </div>
                                 </div>
                         {% endif %}
+
                     </div>
                     <div class="col-md-1"></div>
                 </div>
