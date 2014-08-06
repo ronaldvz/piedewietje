@@ -1,21 +1,25 @@
 @font-face {
-  font-family: '`SourceSansPro-ExtraLight';
-  font-style: normal;
-  font-weight: normal;
-  src: local('SourceSansPro-ExtraLight'), url('http://piedewietje.nl/css/fonts/SourceSansPro-ExtraLight.otf') format('truetype');
+    font-family: 'Source-Sans-Pro-ExtraLight';
+    src:url('/css/fonts/Source-Sans-Pro-ExtraLight.ttf.woff') format('woff'),
+        url('/css/fonts/Source-Sans-Pro-ExtraLight.ttf.svg#Source-Sans-Pro-ExtraLight') format('svg'),
+        url('/css/fonts/Source-Sans-Pro-ExtraLight.ttf.eot'),
+        url('/css/fonts/Source-Sans-Pro-ExtraLight.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
-
 
 @font-face {
-  font-family: '`SourceSansPro-ExtraLightIt';
-  font-style: normal;
-  font-weight: normal;
-  src: local('SourceSansPro-ExtraLightIt'), url('http://piedewietje.nl/css/fonts/SourceSansPro-ExtraLightIt.otf') format('truetype');
+    font-family: 'Source-Sans-Pro-ExtraLight-Italic';
+    src:url('Source-Sans-Pro-ExtraLight-Italic.ttf.woff') format('woff'),
+        url('Source-Sans-Pro-ExtraLight-Italic.ttf.svg#Source-Sans-Pro-ExtraLight-Italic') format('svg'),
+        url('Source-Sans-Pro-ExtraLight-Italic.ttf.eot'),
+        url('Source-Sans-Pro-ExtraLight-Italic.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
 
-
 body {
-    font-family: 'SourceSansPro-ExtraLight', serif;
+    font-family: 'Source-Sans-Pro-ExtraLight';
     padding-bottom: 70px;
 }
 
@@ -41,7 +45,11 @@ hr.blue {
 
 }
 
+p {
+    line-height: 25px;
+}
+
 small, em {
-    font-family: 'SourceSansPro-ExtraLightIt', serif;
+    font-family: 'Source-Sans-Pro-ExtraLight';
     font-style: italic;
 }
