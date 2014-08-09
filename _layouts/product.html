@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="container white col-lg-8 col-lg-offset-2">
+<div class="container white col-lg-10 col-lg-offset-1">
     <div class="row">&nbsp;</div>
     
     <div class="row">
@@ -10,19 +10,19 @@ layout: default
         </div>
     </div>
     
-    <div class="row">
-        <div col="col-lg-10 col-lg-offset-1">
+    <div class="row ">
+        <div class="col-lg-10 col-lg-offset-1">
             <hr class="blue">
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-5 col-lg-offset-1">
             <h2 class="text-uppercase">{{ page.title }}</h2>
             {{ content }}
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-5">
       
             {% if page.caroussel1 %} 
                 <h4 class="text-right text-uppercase">{{page.caroussel1.title}}</h4>
@@ -83,6 +83,7 @@ layout: default
                 </div>
             {% endif %}
 
+        <div class="col-lg-1">&nbsp;</div>
         </div>
     </div>
     <div class="row">&nbsp;</div>

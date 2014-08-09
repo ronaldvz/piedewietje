@@ -2,26 +2,52 @@
 layout: default
 ---
 
-<div class="container col-lg-8 col-lg-offset-2 white">
+<div class="container col-lg-10 col-lg-offset-1 white">
     <div class="row">&nbsp;</div>	
     <div class="row">
         <h1 class="text-center text-uppercase">{{ site.title }} <small>{{site.titlesub}}</small></h1>
     </div>
-
+    <div class="row col-lg-10 col-lg-offset-1">
+        <hr class="blue"/>
+    </div>
 
     {% for post in site.posts %}
-        <div class="row">
-            <div>
-                <hr class="blue">
+
+
+        {% if forloop.index == 1 %}
+            <div class="row">
+        {% endif %}
+
+        {% if post.homeimages %} 
+            <div class="col-lg-4 col-lg-offset-1">
+
+                <div id="{{post.homeimages.cssid}}" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        {% for image in post.homeimages.images %}
+                        <li data-target="#{{post.homeimages.cssid}}" data-slide-to="{{ forloop.index }}" {% if forloop.first %}class="active" {% endif %}></li>
+                        {% endfor %}
+                    </ol>
+
+                    <div class="carousel-inner">
+                        {% for image in post.homeimages.images %}
+                            <div class="item {% if forloop.first %}active {% endif %}">
+                                <a href="{{post.url}}"><img src="{{image}}" class="img-responsive" /></a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
                 <h2 class="text-center text-uppercase"><a href="{{post.url}}">{{post.title}}/ <small>{{post.titlenl}}</small></a></h2>
             </div>
-        </div>
+        {% endif %}
 
-        <div class="row">
-            <div>
-                <a href="{{post.url}}"><img src="http://placekitten.com/1280/300" class="img-responsive"></a>
+        {% if (forloop.index | modulo:2) == 0 %}
             </div>
-        </div>
+            <div class="row">
+        {% endif %}
+        {% if forloop.last %}
+            </div>
+        {% endif %}
+
     {% endfor %}
 
   <div class="row white"><br/></div>
