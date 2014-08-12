@@ -12,14 +12,14 @@ layout: default
     </div>
 
     {% for post in site.posts %}
+        {% assign mod = forloop.index | modulo:2 %}
 
-
-        {% if forloop.index == 1 %}
-            <div class="row">
+        {% if forloop.first %}
+            <div class="row col-lg-offset-1">
         {% endif %}
 
         {% if post.homeimages %} 
-            <div class="col-lg-4 col-lg-offset-1">
+            <div class="col-lg-5 ">
 
                 <div id="{{post.homeimages.cssid}}" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -40,9 +40,9 @@ layout: default
             </div>
         {% endif %}
 
-        {% if (forloop.index | modulo:2) == 0 %}
+        {% if mod == 0 %}
             </div>
-            <div class="row">
+            <div class="row col-lg-offset-1">
         {% endif %}
         {% if forloop.last %}
             </div>
