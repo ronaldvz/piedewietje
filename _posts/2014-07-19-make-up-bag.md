@@ -4,7 +4,7 @@ title:  "Make-up bag"
 titlenl: "Make-up tasje / pennenetui"
 date:   2014-07-19 21:08:04
 homeimages: { cssid: 'mb', images: ['/img/home/Home-MB1.jpg', '/img/home/Home-MB2.jpg'] }
-caroussel1: { number: 1, title: 'Darkblue', cssid: 'darkblue', images: ['http://placekitten.com/400/300','http://placekitten.com/400/300']}
+caroussel1: { number: 1, title: 'Darkblue', cssid: 'darkblue', images: ['/img/home/Home-MB1.jpg','/img/home/Home-MB2.jpg']}
 ---
 
 The make-up bag/ pouch/ etui is a small bag made in the style of The Toiletry Bag Large. This makeup bag can both separately and in  The Toiletry Bag Large can be used. Along with  The Toiletry Bag Large makes a nice set.
