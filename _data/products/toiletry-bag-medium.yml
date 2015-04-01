@@ -1,0 +1,9 @@
+productname: Toiletry Bag
+producturl: toiletry-bag-medium.html
+category: toiletry-bags
+types: 
+  - name: Navy
+    size: Medium
+    color: #000
+    images: 
+      - url: img/tbm/TB-M-01linnen.jpg

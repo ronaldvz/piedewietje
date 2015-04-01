@@ -1,7 +1,7 @@
 # Site settings
-title: Piedewietje Handmade Bags
-titlesub: Handgemaakte tassen
-email: your-email@domain.com
+title: Piedewietje 
+titlesub: Handmade Bags / Handgemaakte tassen
+email: info@piedewietje.nl
 baseurl: ""
 url: "http://www.piedewietje.nl"
 #twitter_username: jekyllrb
@@ -10,3 +10,6 @@ url: "http://www.piedewietje.nl"
 # Build settings
 markdown: kramdown
 permalink: none 
+
+sass:
+    sass-dir: _sass

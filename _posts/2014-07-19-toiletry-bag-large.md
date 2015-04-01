@@ -3,10 +3,6 @@ layout: product
 title:  "Toiletry bag [Large]"
 titlenl: "Toilettas"
 date:   2014-07-19 23:08:04
-homeimages: { cssid: 'large', images: ['/img/home/Home-TBL-1.jpg','/img/home/Home-TBL-2.jpg'] }
-caroussel1: { number: 1, title: 'Dark Blue', cssid: 'darkblue', images: ['/img/tbl/blue/TBL01-01.jpg','/img/tbl/blue/TBL01-02.jpg','/img/tbl/blue/TBL01-03.jpg','/img/tbl/blue/TBL01-04.jpg','/img/tbl/blue/TBL01-05.jpg']}
-caroussel2: { number: 2, title: 'Offwhite - Rust Red', cssid: 'red', images: ['/img/tbl/red/TBL02-01.jpg','/img/tbl/red/TBL02-02.jpg','/img/tbl/red/TBL02-03.jpg','/img/tbl/red/TBL02-04.jpg','/img/tbl/red/TBL02-05.jpg','/img/tbl/red/TBL02-06.jpg']}
-caroussel3: { number: 3, title: 'Offwhite - Blue', cssid: 'offwhiteblue', images: ['/img/tbl/whiteblue/TBL03-01.jpg','/img/tbl/whiteblue/TBL03-02.jpg','/img/tbl/whiteblue/TBL03-03.jpg','/img/tbl/whiteblue/TBL03-04.jpg','/img/tbl/whiteblue/TBL03-05.jpg','/img/tbl/whiteblue/TBL03-06.jpg']}
 ---
 The toiletry bag is handmade and has unique details. No toiletry bag is exactly the same. The bag can be used in different ways, folded into one another which he is compact to carry and expands when it is in use at the sink. Also, the bag has a handle to carry it easily. The inside has a large pocket on both sides with a storage compartment.
 

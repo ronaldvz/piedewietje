@@ -1,0 +1,9 @@
+{% if page.title != 'contact' %}
+<h2 class="menutitle text-uppercase">Products:</h2>
+  <ul class="menu">
+    <li {% if page.title == 'index' %} class="active"{% endif %}><a href="/">All</a></li>
+    <li {% if page.title == 'toiletry-bags' %} class="active" {% endif %}><a href="/toiletry-bags.html">Toiletry Bags <span><br/>/ Toilettassen</span></a></li>
+    <li {% if page.title == 'make-up-bags' %} class="active" {% endif %}><a href="/make-up-bags.html">Make-up Bags<span><br/>/ Make-up tasjes / Pennenetui's</span></a></li>
+    <li {% if page.title == 'backpacks' %} class="active" {% endif %}><a href="/backpacks.html">Backpacks / Rucksacks<span><br/>/ Rugzakken</span></a></li>
+  </ul>
+{% endif %}

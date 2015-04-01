@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Source-Sans-Pro-ExtraLight';
+    src:url('/css/fonts/Source-Sans-Pro-ExtraLight.ttf.woff') format('woff'),
+        url('/css/fonts/Source-Sans-Pro-ExtraLight.ttf.svg#Source-Sans-Pro-ExtraLight') format('svg'),
+        url('/css/fonts/Source-Sans-Pro-ExtraLight.ttf.eot'),
+        url('/css/fonts/Source-Sans-Pro-ExtraLight.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source-Sans-Pro-ExtraLight-Italic';
+    src:url('Source-Sans-Pro-ExtraLight-Italic.ttf.woff') format('woff'),
+        url('Source-Sans-Pro-ExtraLight-Italic.ttf.svg#Source-Sans-Pro-ExtraLight-Italic') format('svg'),
+        url('Source-Sans-Pro-ExtraLight-Italic.ttf.eot'),
+        url('Source-Sans-Pro-ExtraLight-Italic.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Source-Sans-Pro-ExtraLight';
+    padding-bottom: 70px;
+}
+
+.white {
+  background-color: #FFF;
+}
+
+hr.blue {
+  border-color: #095488;
+}
+
+.mainlogo {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    z-index: 15;
+    width: 200px;
+    margin-left: -86px;
+}
+
+.spacermainlogo {
+    height: 170px;
+
+}
+
+p {
+    line-height: 26px;
+}
+
+small, em {
+    font-family: 'Source-Sans-Pro-ExtraLight';
+    font-style: italic;
+}

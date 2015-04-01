@@ -3,8 +3,6 @@ layout: product
 title:  "Toiletry bag [Medium]"
 titlenl: "Toilettas"
 date:   2014-07-19 18:00:04
-homeimages: { cssid: 'medium', images: ['/img/home/Home-TB-Medium-01.jpg'] }
-caroussel1: { number: 1, title: 'Linen - Dark Blue', cssid: 'linen', images: ['/img/home/Home-TB-Medium-01.jpg']}
 ---
 The toiletry bag is handmade and unique details. 
 No toiletry bag is exactly the same. The inside has a large pocket on both sides with a storage compartment.
