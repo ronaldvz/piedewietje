@@ -3,17 +3,17 @@ producturl: make-up-bag.html
 category: make-up-bag
 types: 
   - name: Navy
-    size: Normal
+    size: 
     color: #000
     images: 
       - url: img/home/Home-MB1.jpg
   - name: Sailor
-    size: Normal
+    size: 
     color: #000
     images: 
       - url: img/home/Home-MB2.jpg
   - name: Rust 
-    size: Normal 
+    size: 
     color: #000
     images: 
       - url: img/home/Home-MB1.jpg
