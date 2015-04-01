@@ -78,6 +78,10 @@ body {
     min-height: 175px;
     text-align: center;
 
+    a:hover {
+      text-decoration: none;
+    }
+
     h2 {
       font-size: 10pt;
       text-transform: uppercase;
@@ -101,6 +105,11 @@ body {
     p {
       margin-right: 10px;
     }
+  }
+
+  .home-image-active {
+    @extend .home-image;
+    border: 2px solid $gray-base;
   }
 
   .spacer {

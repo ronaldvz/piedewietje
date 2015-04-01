@@ -17,11 +17,11 @@ title: index
           <div class="col-md-4">
             <div class="home-image">
               <a href="{{product.producturl}}">
-                <img class="img-responsive" src="{{image.url}}">
-                <h2>{{product.productname}}
-                  <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
-                  <span class="productsize">[{{type.size}}]</span>
-                </h2>
+                  <img class="img-responsive" src="{{image.url}}">
+                  <h2>{{product.productname}}
+                    <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
+                    {% if type.size %}<span class="productsize">[{{type.size}}]</span>{% endif %}
+                  </h2>
               </a>
             </div>
           </div>
