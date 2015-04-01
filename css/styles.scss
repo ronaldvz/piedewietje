@@ -7,7 +7,7 @@ body {
 
   .logo {
     img {
-      margin-top: 40px;
+      margin-top: 60px;
       margin-left: 40px;
     }
   }
@@ -30,14 +30,19 @@ body {
       font-weight: 900;
       padding-top: 20px;
       padding-bottom: 30px;
-      margin-left: 50px;
       font-size: 32pt;
     }
     
-    span {
+    span:nth-of-type(1) {
       font-size: $font-size-h2;
-      margin-left: 70px;
     }
+
+    span:nth-of-type(2) {
+      font-style: italic;
+      font-size: 15pt;
+      color: #d6d6d6;
+    }
+
   }
 
   ul.menu {
@@ -94,7 +99,7 @@ body {
         text-transform: none;
         font-style: italic;
         font-family: Garamond;
-        font-size: 13pt;
+        font-size: 10pt;
       }
 
       span.productsize {

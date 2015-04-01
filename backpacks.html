@@ -6,13 +6,13 @@ title: backpacks
 {% for product_hash in site.data.products  %}
   {% assign product = product_hash[1] %}
 
-  <div class="row col-md-offset-1">
+  <div class="row">
   {% if product.category == 'backpack'%} 
 
   {% capture count %}{{ count | plus: '1' }}{% endcapture %}
 
     {% if count == "1" %}
-      <div class="row col-md-offset-1">
+      <div class="row">
     {% endif %}
 
     {% for type in product.types %}
@@ -39,7 +39,7 @@ title: backpacks
 
         {% if mod == 0 %}
           </div>
-          <div class="row col-md-offset-1 spacer"></div>
+          <div class="row spacer"></div>
         {% endif %}
       {% endfor %}
     {% if forloop.last %}
