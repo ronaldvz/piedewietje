@@ -14,10 +14,10 @@ title: index
       
       {% for image in type.images %}
         {% if forloop.first %}
-          <div class="col-md-4">
+          <div class="col-md-4 spacer">
             <div class="home-image">
               <a href="{{product.producturl}}">
-                  <img class="img-responsive" src="{{image.url}}">
+                  <img src="{{image.url}}">
                   <h2>{{product.productname}}
                     <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
                     {% if type.size %}<span class="productsize">[{{type.size}}]</span>{% endif %}
@@ -28,10 +28,6 @@ title: index
         {% endif %}
         {% endfor %}
 
-        {% if mod == 0 %}
-          </div>
-          <div class="row spacer">
-        {% endif %}
 
     {% endfor %}
   {% if forloop.last %}

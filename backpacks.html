@@ -9,24 +9,18 @@ title: backpacks
   <div class="row">
   {% if product.category == 'backpack'%} 
 
-  {% capture count %}{{ count | plus: '1' }}{% endcapture %}
-
-    {% if count == "1" %}
+    {% if forloop.first %}
       <div class="row">
     {% endif %}
 
     {% for type in product.types %}
-
-      {% assign mod = count | modulo:3 %}
-
-      {% capture count %}{{ count | plus: '1' }}{% endcapture %}
         
         {% for image in type.images %}
           {% if forloop.first %}
-            <div class="col-md-4">
+            <div class="col-md-4 spacer">
               <div class="home-image">
                 <a href="{{product.producturl}}">
-                  <img class="img-responsive" src="{{image.url}}">
+                  <img src="{{image.url}}">
                   <h2>{{product.productname}}
                     <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
                     <span class="productsize">[{{type.size}}]</span>
@@ -37,10 +31,6 @@ title: backpacks
           {% endif %}
         {% endfor %}
 
-        {% if mod == 0 %}
-          </div>
-          <div class="row spacer"></div>
-        {% endif %}
       {% endfor %}
     {% if forloop.last %}
       </div>

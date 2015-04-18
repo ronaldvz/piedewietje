@@ -18,7 +18,7 @@ title: make-up-bags
         
         {% for image in type.images %}
           {% if forloop.first %}
-            <div class="col-md-4">
+            <div class="col-md-4 spacer">
               <div class="home-image">
                 <a href="{{product.producturl}}">
                   <img class="img-responsive" src="{{image.url}}">
@@ -32,10 +32,6 @@ title: make-up-bags
           {% endif %}
         {% endfor %}
 
-        {% if mod == 0 %}
-          </div>
-          <div class="row  spacer"></div>
-        {% endif %}
       {% endfor %}
     {% if forloop.last %}
       </div>
