@@ -5,7 +5,7 @@ title: make-up-bags
 {% for product_hash in site.data.products  %}
   {% assign product = product_hash[1] %}
 
-  <div class="row col-md-offset-1">
+  <div class="row">
   {% if product.category == 'make-up-bag'%} 
 
     {% capture count %}{{ count | plus: '1' }}{% endcapture %}
@@ -34,7 +34,7 @@ title: make-up-bags
 
         {% if mod == 0 %}
           </div>
-          <div class="row col-md-offset-1 spacer"></div>
+          <div class="row  spacer"></div>
         {% endif %}
       {% endfor %}
     {% if forloop.last %}

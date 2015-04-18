@@ -6,7 +6,7 @@ title: index
   {% assign product = product_hash[1] %}
 
   {% if forloop.first %}
-    <div class="row col-md-offset-1">
+    <div class="row">
   {% endif %}
 
     {% for type in product.types %}
@@ -30,7 +30,7 @@ title: index
 
         {% if mod == 0 %}
           </div>
-          <div class="row col-md-offset-1 spacer">
+          <div class="row spacer">
         {% endif %}
 
     {% endfor %}

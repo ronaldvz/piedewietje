@@ -10,14 +10,14 @@ title: toiletry-bags
   {% capture count %}{{ count | plus: '1' }}{% endcapture %}
 
   {% if count == "1" %}
-  <div class="row col-md-offset-1">
+  <div class="row">
   {% endif %}
 
     {% for type in product.types %}
     {% assign mod = count | modulo:3 %}
 
       {% if count == 1 %}
-      <div class="row co-md-offset-1">
+      <div class="row">
       {% endif %}
 
       {% capture count %}{{ count | plus: '1' }}{% endcapture %}
@@ -41,7 +41,7 @@ title: toiletry-bags
 
         {% if mod == 0 %}
           </div>
-          <div class="row col-md-offset-1 spacer">
+          <div class="row spacer">
         {% endif %}
       {% endfor %}
     {% if forloop.last %}
