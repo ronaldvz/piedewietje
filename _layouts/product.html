@@ -2,13 +2,33 @@
 layout: default
 ---
 <div class="container">
+  <div class="row product-title">
+    <h2 class="text-uppercase">{{ page.title }} <span>Sailor</span><span>[ {{ page.size }} ]</span></h2>
+  </div>
     <div class="row">
-      <div class="col-md-3 ">
-        <h2 class="text-uppercase">{{ page.title }}</h2>
-        test
-      
+      <div class="col-md-4 product-details">
+        <div class="pic">
+
+        </div>
+        <div class="thumbs">
+
+        </div>
+        <div class="colors">
+          This {{ page.title }} is availabe in:
+          <ul>
+            <li class="navy"><a class="navy" href="#">Navy</a></li>
+            <li class="rust"><a class="rust" href="#">Rust</a></li>
+            <li class="sailor"><a class="sailor" href="#">Sailor</a></li>
+            <li class="noir"><a class="noir" href="#">Noir</a></li>
+          </ul>
+        </div>
+        <a href="#">
+          <div class="buy">
+            Buy this&nbsp;<span class="text-uppercase">{{ page.title }}</span>
+          </div>
+        </a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         {{ content }}
       </div>
     </div>

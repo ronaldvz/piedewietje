@@ -1,0 +1,46 @@
+---
+layout: default
+title: gymbags
+---
+{% for product_hash in site.data.products  %}
+  {% assign product = product_hash[1] %}
+
+  <div class="row">
+  {% if product.category == 'gymbag' %} 
+
+    {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+
+    {% for type in product.types %}
+
+      {% assign mod = count | modulo:3 %}
+
+      {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+        
+        {% for image in type.images %}
+          {% if forloop.first %}
+            <div class="col-md-4">
+              <div class="home-image">
+                <a href="{{product.producturl}}">
+                  <img class="img-responsive" src="{{image.url}}">
+                  <h2>{{product.productname}}
+                    <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
+                    <span class="productsize">[{{type.size}}]</span>
+                  </h2>
+                </a>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        {% if mod == 0 %}
+          </div>
+          <div class="row  spacer"></div>
+        {% endif %}
+      {% endfor %}
+    {% if forloop.last %}
+      </div>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<div class="row">&nbsp;</div>

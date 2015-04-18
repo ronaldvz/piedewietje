@@ -1,6 +1,7 @@
 ---
 ---
 @import 'bootstrap';
+@import 'colors';
 @import 'fonts';
 body { 
   font-family: 'Source-Sans-Pro-ExtraLight';
@@ -58,15 +59,18 @@ body {
     li {
       padding-bottom: 10px;
 
-      a {
+      a:nth-of-type(1) {
         font-weight: 900;
         font-size: 12pt;
+      }
 
-        span {
+      a:nth-of-type(2){
           font-style: italic;
           font-weight: normal;
           font-size: 9pt;
-        }
+      }
+      a:nth-of-type(2):hover {
+        text-decoration: none;
       }
     }
   }
@@ -124,5 +128,101 @@ body {
   a:href {
     color: $link-color;
   }
+
+
+  .product-title {
+    margin-bottom: 5px;
+    h2 {
+      margin-top: 0px;
+      font-size: 20px;
+
+      span:nth-of-type(1) {
+        font-family: Garamond;
+        font-style: italic;
+        text-transform: none;
+        margin-left: 10px;
+      }
+      
+      span:nth-of-type(2) {
+        margin-left: 20px;
+
+      }
+    }
+  }
+
+  .product-details {
+    margin-right: 15px;
+
+    .pic {
+      border: 1px solid black;
+      height: 300px;
+    }
+
+    .thumbs {
+      height: 50px;
+    }
+
+    .colors {
+      height: 50px;
+      margin-bottom: 40px;
+
+      ul {
+        font-family: Garamond;
+        font-style: italic;
+
+        li:nth-of-type(1) {
+          margin-left: 0px;
+          padding-left: 0px;
+        }
+        li {
+          width: 70px;
+          float: left;
+
+        }
+
+      }
+    }
+
+    a {
+      font-size: 20px;
+      text-align: center;
+
+      .buy {
+        padding: 10px;
+        border: 1px solid black;
+        font-style: italic;
+        font-family: Garamond;
+
+        span {
+          font-style: normal;
+          font-family: 'Source-Sans-Pro-ExtraLight';
+        }
+
+      }
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .navy {
+    color: $navy; 
+  }
+  .sailor {
+    color: $sailor;
+  }
+  .linen {
+    color: $linen;
+  }
+  .noir {
+    color: $noir;
+  }
+  .rust {
+    color: $rust;
+  }
+
+
+
+
 
 }

@@ -17,3 +17,8 @@ types:
     color: #000
     images: 
       - url: img/home/Home-MB1.jpg
+  - name: Noir
+    size: 
+    color: #000
+    images: 
+      - url: img/home/Home-MB1.jpg
