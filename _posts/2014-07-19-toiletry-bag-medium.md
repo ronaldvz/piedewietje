@@ -1,6 +1,7 @@
 ---
 layout: product
-title:  "Toiletry bag"
+title:  "Toiletry Bag"
+ident: "toiletry-bag-medium"
 size: "Medium"
 titlenl: "Toilettas"
 date:   2014-07-19 18:00:04
@@ -12,8 +13,3 @@ The bag is lined with cotton and the outside made ​​of linen, he is also equ
 
 Dimensions: L x W x H in cm.
 Unfolded: 20 x 12 x 16
-
-### DE TOILETTAS
-*Deze toilettas is handgemaakt en heeft unieke details. Geen enkele toilettas is exact hetzelfde. De binnenzijde heeft een groot vak met aan beide zijden een  opbergvakje.*
-
-*De tas is gevoerd met katoen en van buiten gemaakt van linnen, daarnaast is hij voorzien van een spat-waterdichte onderzijde en is afgewerkt met een blauw - witte band.*

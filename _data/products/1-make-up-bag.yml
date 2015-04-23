@@ -1,24 +1,30 @@
 productname: Make-up Bag
+ident: make-up-bag
 producturl: make-up-bag.html
 category: make-up-bag
+dutchdescription: [ '### MAKE-UP TASJE', 'Het make-up tasje / pennenetui is een klein tasje gemaakt in de stijl van The Toilettas Large. Dit make-up tasje kan zowel afzonderlijk als in The Toilettas Large kan worden gebruikt. Samen met De toilettas Large maakt hij een mooie set.', 'Als etui met pennen, hij is ook zeer geschikt. Gemaakt en bekleed met stevig katoen en is afgewerkt met een blauw - wit / offwhite - roest rood elastische band.', 'Het make-up tasje is er in 3 kleuren; Donker blauw, Gebroken wit met blauw en Gebroken wit met roest rood.' ]
 types: 
   - name: Navy
     size: 
     color: #000
+    cssclass: navy
     images: 
       - url: img/home/Home-MB1.jpg
   - name: Sailor
     size: 
     color: #000
+    cssclass: sailor
     images: 
       - url: img/home/Home-MB2.jpg
   - name: Rust 
     size: 
     color: #000
+    cssclass: rust
     images: 
       - url: img/home/Home-MB1.jpg
   - name: Noir
     size: 
     color: #000
+    cssclass: noir
     images: 
       - url: img/home/Home-MB1.jpg
