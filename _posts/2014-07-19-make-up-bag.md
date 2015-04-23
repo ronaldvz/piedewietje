@@ -18,11 +18,3 @@ The make-up bag is available in three colors; Dark Blue, Off-white with blue and
 Dimensions:W x H in cm.
 Compact: 25 x 15 x 12
 
-
-### MAKE-UP TASJE / PENNENETUI
-*Het make-up tasje /pennenetui is een klein tasje gemaakt in de stijl van The Toilettas Large. Dit make-up tasje kan zowel afzonderlijk als in The Toilettas Large kan worden gebruikt. Samen met De toilettas Large maakt hij een mooie set.*
-
-*Als etui met pennen, hij is ook zeer geschikt.*
-
-*Gemaakt en bekleed met [stevig] katoen en is afgewerkt met een blauw - wit / offwhite - roest rood [elastische] band.
-Het make-up tasje  is er in 3 kleuren; Donker blauw, Gebroken wit met blauw en Gebroken wit met roest rood.*

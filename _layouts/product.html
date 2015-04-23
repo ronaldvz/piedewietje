@@ -39,11 +39,23 @@ layout: default
                 Buy this&nbsp;<span class="text-uppercase">{{ page.title }}</span>
               </div>
             </a>
-            {% endif %}
-          {% endfor %}
+          {% endif %}
+        {% endfor %}
       </div>
       <div class="col-md-3">
         {{ content }}
+          {% for product_hash in site.data.products %}
+            {% assign product = product_hash[1] %}
+              {% if product.ident == page.ident %}
+                <button id="showDutch"> Toon NL omschrijving</button>
+                <div class="dutchdescription">
+                  {% for line in product.dutchdescription %}
+                    <p>{{ line | markdownify }}</p>
+                  {% endfor %}
+                </div>
+              {% endif %}
+          {% endfor %}
+        </div>
       </div>
     </div>
 </div>

@@ -182,9 +182,7 @@ body {
         li {
           width: 70px;
           float: left;
-
         }
-
       }
     }
 
@@ -210,9 +208,10 @@ body {
     }
   }
 
-  .abc {
-    margin-bottom: 10px;
+  .dutchdescription {
+    display: none;
   }
+
 
   .navy {
     color: $navy; 
