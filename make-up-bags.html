@@ -24,7 +24,7 @@ title: make-up-bags
                   <img class="img-responsive" src="{{image.url}}">
                   <h2>{{product.productname}}
                     <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
-                    <span class="productsize">[{{type.size}}]</span>
+                    {% if type.size %}<span class="productsize">[{{type.size}}]</span>{% endif %}
                   </h2>
                 </a>
               </div>

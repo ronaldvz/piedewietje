@@ -1,6 +1,7 @@
 ---
 layout: product
-title:  "Toiletry bag"
+title:  "Toiletry Bag"
+ident: "toiletry-bag-large"
 size: "Large"
 titlenl: "Toilettas"
 date:   2014-07-19 23:08:04

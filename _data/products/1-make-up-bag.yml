@@ -1,24 +1,29 @@
 productname: Make-up Bag
+ident: make-up-bag
 producturl: make-up-bag.html
 category: make-up-bag
 types: 
   - name: Navy
     size: 
     color: #000
+    cssclass: navy
     images: 
       - url: img/home/Home-MB1.jpg
   - name: Sailor
     size: 
     color: #000
+    cssclass: sailor
     images: 
       - url: img/home/Home-MB2.jpg
   - name: Rust 
     size: 
     color: #000
+    cssclass: rust
     images: 
       - url: img/home/Home-MB1.jpg
   - name: Noir
     size: 
     color: #000
+    cssclass: noir
     images: 
       - url: img/home/Home-MB1.jpg

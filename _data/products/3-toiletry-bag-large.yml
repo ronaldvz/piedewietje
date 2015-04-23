@@ -1,10 +1,12 @@
 productname: Toiletry Bag
+ident: toiletry-bag-large
 producturl: toiletry-bag-large.html
 category: toiletry-bags
 types: 
   - name: Navy
     size: Large
     color: #000
+    cssclass: navy 
     images: 
       - url: img/tbl/blue/TBL01-01.jpg
       - url: img/tbl/blue/TBL01-02.jpg
@@ -14,6 +16,7 @@ types:
   - name: Rust
     size: Large
     color: #000
+    cssclass: rust
     images:
       - url: img/tbl/red/TBL02-01.jpg
       - url: img/tbl/red/TBL02-02.jpg
@@ -24,6 +27,7 @@ types:
   - name: Sailor 
     size: Large
     color: #000
+    cssclass: sailor
     images:
       - url: img/tbl/whiteblue/TBL03-01.jpg
       - url: img/tbl/whiteblue/TBL03-02.jpg

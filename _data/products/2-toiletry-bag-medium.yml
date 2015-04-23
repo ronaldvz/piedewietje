@@ -1,14 +1,17 @@
 productname: Toiletry Bag
+ident: toiletry-bag-medium
 producturl: toiletry-bag-medium.html
 category: toiletry-bags
 types: 
   - name: Linen
     size: Medium
     color: #000
+    cssclass: linen
     images: 
       - url: img/tbm/TB-M-01linnen.jpg
   - name: Noir
     size: Medium
     color: #000
+    cssclass: noir
     images: 
       - url: img/tbm/TB-M-01linnen.jpg

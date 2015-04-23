@@ -1,6 +1,8 @@
 ---
 layout: product
-title:  "Make-up bag"
+title:  "Make-up Bag"
+ident: "make-up-bag"
+size: 
 titlenl: "Make-up tasje / pennenetui"
 date:   2014-07-19 21:08:04
 ---
