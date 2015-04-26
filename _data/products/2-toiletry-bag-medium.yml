@@ -2,7 +2,7 @@ productname: Toiletry Bag
 ident: toiletry-bag-medium
 producturl: toiletry-bag-medium.html
 category: toiletry-bags
-dutchdescription: [ '### DE TOILETTAS', 
+dutchdescription: [ 
   'Deze toilettas is handgemaakt en heeft unieke details. Geen enkele toilettas is exact hetzelfde. De binnenzijde heeft een groot vak met aan beide zijden een  opbergvakje.', 
   'De tas is gevoerd met katoen en van buiten gemaakt van linnen, daarnaast is hij voorzien van een spat-waterdichte onderzijde en is afgewerkt met een blauw - witte band.' ]
 types: 
@@ -11,7 +11,10 @@ types:
     color: #000
     cssclass: linen
     images: 
-      - url: img/tbm/TB-M-01linnen.jpg
+      - url: img/tbm/TB-M-Linen-1.png
+      - url: img/tbm/TB-M-Linen-2.png
+      - url: img/tbm/TB-M-Linen-3.png
+      - url: img/tbm/TB-M-Linen-4.png
   - name: Noir
     size: Medium
     color: #000

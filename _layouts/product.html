@@ -47,7 +47,7 @@ layout: default
           {% for product_hash in site.data.products %}
             {% assign product = product_hash[1] %}
               {% if product.ident == page.ident %}
-                <button id="showDutch"> Toon NL omschrijving</button>
+                <a id="showDutch">Nederlandse product uitleg</a>
                 <div class="dutchdescription">
                   {% for line in product.dutchdescription %}
                     <p>{{ line | markdownify }}</p>
