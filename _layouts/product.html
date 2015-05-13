@@ -18,9 +18,11 @@ layout: default
 
             {% if product.ident == page.ident %}
               {% for type in product.types %}
-                <div class="type {{type.cssclass}}">
+                <div class="carousel type {{type.cssclass}}">
                   {% for image in type.images %}
-                    <img src="{{ image.url }}" />
+                  <a href="{{ image.url }}">
+                    <img src="{{ image.url}}" />
+                  </a>
                   {% endfor %}
                 </div>
                 {% endfor %}
