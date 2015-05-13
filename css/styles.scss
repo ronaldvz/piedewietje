@@ -3,6 +3,7 @@
 @import 'bootstrap';
 @import 'colors';
 @import 'fonts';
+@import 'magnific';
 body { 
   font-family: 'Source-Sans-Pro-ExtraLight';
 
@@ -163,13 +164,32 @@ body {
   .product-details {
     margin-right: 15px;
 
-    .pic {
-      border: 1px solid black;
-      height: 300px;
+    .pics {
+
+      .type { 
+        display: block;
+        width: 370px;
+        //first images of type
+        img:nth-of-type(1) {
+          width: inherit;
+          
+        }
+        //other images
+        img {
+          width: 60px;
+
+        }
+      }
+
     }
 
     .thumbs {
+
+      .thumb {
+
+      }
       height: 50px;
+      border: 1px solid black;
     }
 
     .colors {
@@ -218,6 +238,7 @@ body {
     font-family: Garamond;
     font-style: italic;
     font-size: 16px;
+    cursor: pointer;
   }
 
   .dutchdescription {

@@ -10,9 +10,32 @@ function() {
 $("#showDutch").click(function() {
   if($(".dutchdescription").is(":hidden")) {
     $(".dutchdescription").fadeIn();
-    $(this).text("Verberg NL omschrijving");
   } else {
     $(".dutchdescription").hide();
-    $(this).text("Toon NL omschrijving");
+  }
+});
+
+//change carousel when color is clicked
+$(".colors").find("a").click(function() {
+  showCarousel($(this).attr('class'));
+});
+
+//shows the carousel with given color. Hides others
+function showCarousel(color) {
+  $(".type").hide();
+  $("." + color).fadeIn();
+}
+
+
+//init image carousels
+$(document).ready(function() {
+
+  //check for hash
+  var hash = window.location.hash;
+
+  //show the correct carousel
+  if(hash != '') {
+    hash = hash.substring(1, hash.length);
+    showCarousel(hash);
   }
 });
