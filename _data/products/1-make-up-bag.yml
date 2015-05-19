@@ -9,19 +9,28 @@ types:
     color: #000
     cssclass: navy
     images: 
-      - url: img/home/Home-MB1.jpg
+      - url: img/mb/navy/MB-Navy-1.png
+      - url: img/mb/navy/MB-Navy-2.png
+      - url: img/mb/navy/MB-Navy-3.png
+      - url: img/mb/navy/MB-Navy-4.png
   - name: Sailor
     size: 
     color: #000
     cssclass: sailor
     images: 
-      - url: img/home/Home-MB2.jpg
+      - url: img/mb/sailor/MB-Sailor-1.png
+      - url: img/mb/sailor/MB-Sailor-2.png
+      - url: img/mb/sailor/MB-Sailor-3.png
+      - url: img/mb/sailor/MB-Sailor-4.png
   - name: Rust 
     size: 
     color: #000
     cssclass: rust
     images: 
-      - url: img/home/Home-MB1.jpg
+      - url: img/mb/rust/MB-Rust-1.png
+      - url: img/mb/rust/MB-Rust-2.png
+      - url: img/mb/rust/MB-Rust-3.png
+      - url: img/mb/rust/MB-Rust-4.png
   - name: Noir
     size: 
     color: #000
