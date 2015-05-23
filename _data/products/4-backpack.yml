@@ -4,15 +4,15 @@ producturl: backpack.html
 category: backpack 
 dutchdescription: [ '' ]
 types: 
-  - name: Noir
-    size: 
-    color: #000
-    cssclass: noir
-    images: 
-      - url: img/bp/noir/BP-N-1.png
   - name: Blanc Et Noir
     size: 
     color: #000
     cssclass: blancnoir 
     images: 
       - url: img/bp/blancetnoir/BP-BN-1.png
+  - name: Noir
+    size: 
+    color: #000
+    cssclass: noir
+    images: 
+      - url: img/bp/noir/BP-N-1.png
