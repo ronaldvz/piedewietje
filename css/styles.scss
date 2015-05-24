@@ -42,7 +42,6 @@ body {
     span:nth-of-type(2) {
       font-style: italic;
       font-size: 15pt;
-      color: #d6d6d6;
     }
 
   }
@@ -152,7 +151,6 @@ body {
         font-style: italic;
         text-transform: none;
         margin-left: 10px;
-
       }
 
       span:nth-of-type(2) {
@@ -167,7 +165,7 @@ body {
     .pics {
 
       .type { 
-        display: block;
+        display: none;
         width: 370px;
 
         a:nth-of-type(1) {
@@ -266,4 +264,24 @@ body {
   .rust {
     color: $rust;
   }
+
+  .hidden {
+    display: none;
+  }
+
+  .shown {
+    display: inline;
+  }
+  
+  .press {
+
+    hr {
+      margin: 43px 0px 43px 0px;
+    }
+
+    .press-photo img {
+      width: 370px;
+    }
+  }
+  
 }

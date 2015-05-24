@@ -11,13 +11,18 @@ types:
     color: #000
     cssclass: linen
     images: 
-      - url: img/tbm/TB-M-Linen-1.png
-      - url: img/tbm/TB-M-Linen-2.png
-      - url: img/tbm/TB-M-Linen-3.png
-      - url: img/tbm/TB-M-Linen-4.png
+      - url: img/tbm/linen/TB-M-Linen-1.png
+      - url: img/tbm/linen/TB-M-Linen-2.png
+      - url: img/tbm/linen/TB-M-Linen-3.png
+      - url: img/tbm/linen/TB-M-Linen-4.png
+    etsylink: https://www.etsy.com/nl/listing/231652347/toilettas-linen-medium
   - name: Noir
     size: Medium
     color: #000
     cssclass: noir
     images: 
-      - url: img/tbm/TB-M-01linnen.jpg
+      - url: img/tbm/noir/TB-M-Noir-2.png
+      - url: img/tbm/noir/TB-M-Noir-1.png
+      - url: img/tbm/noir/TB-M-Noir-3.png
+      - url: img/tbm/noir/TB-M-Noir-4.png
+    etsylink: https://www.etsy.com/nl/listing/231653729/toilettas-noir-medium

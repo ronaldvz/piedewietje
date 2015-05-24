@@ -15,6 +15,7 @@ types:
       - url: img/tbl/blue/TBL01-03.jpg
       - url: img/tbl/blue/TBL01-04.jpg
       - url: img/tbl/blue/TBL01-05.jpg
+    etsylink: http://etsy.me/1rylNwM 
   - name: Rust
     size: Large
     color: #000
@@ -26,6 +27,7 @@ types:
       - url: img/tbl/red/TBL02-04.jpg
       - url: img/tbl/red/TBL02-05.jpg
       - url: img/tbl/red/TBL02-06.jpg
+    etsylink: http://etsy.me/1ryniLq  
   - name: Sailor 
     size: Large
     color: #000
@@ -36,3 +38,4 @@ types:
       - url: img/tbl/sailor/TB-L-Sailor-03.png
       - url: img/tbl/sailor/TB-L-Sailor-04.png
       - url: img/tbl/sailor/TB-L-Sailor-05.png
+    etsylink: http://etsy.me/1sRDvdr

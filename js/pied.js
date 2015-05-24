@@ -31,6 +31,9 @@ function showCarousel(color) {
 
   //replace color in product-title
   $(".product-title h2 span:first").text(color.charAt(0).toUpperCase() + color.slice(1).toLowerCase());
+  $(".product-title h2 span:first").removeClass('hidden');
+  $(".product-title h2 span:first").addClass('shown');
+
 }
 
 
