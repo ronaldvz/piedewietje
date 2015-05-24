@@ -13,6 +13,7 @@ types:
       - url: img/mb/navy/MB-Navy-2.png
       - url: img/mb/navy/MB-Navy-3.png
       - url: img/mb/navy/MB-Navy-4.png
+    etsylink: https://www.etsy.com/nl/listing/225037584/make-up-tasje-etui-navy 
   - name: Sailor
     size: 
     color: #000
@@ -22,6 +23,7 @@ types:
       - url: img/mb/sailor/MB-Sailor-2.png
       - url: img/mb/sailor/MB-Sailor-3.png
       - url: img/mb/sailor/MB-Sailor-4.png
+    etsylink: https://www.etsy.com/nl/listing/225037020/make-up-tasje-etui-sailor
   - name: Rust 
     size: 
     color: #000
@@ -31,6 +33,7 @@ types:
       - url: img/mb/rust/MB-Rust-2.png
       - url: img/mb/rust/MB-Rust-3.png
       - url: img/mb/rust/MB-Rust-4.png
+    etsylink: https://www.etsy.com/nl/listing/225037852/make-up-tasje-etui-rust
   - name: Noir
     size: 
     color: #000
@@ -40,4 +43,4 @@ types:
       - url: img/mb/noir/MB-Noir-2.png
       - url: img/mb/noir/MB-Noir-3.png
       - url: img/mb/noir/MB-Noir-4.png
-
+    etsylink: https://www.etsy.com/nl/listing/234333762/make-up-tasje-etui-noir 

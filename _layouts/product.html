@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container">
   <div class="row product-title">
-    <h2 class="text-uppercase">{{ page.title }} <span>Sailor</span>
+    <h2 class="text-uppercase">{{ page.title }} <span class="hidden">Sailor</span>
       {% if page.size %}<span>[ {{ page.size }} ]</span>{% endif %}
     </h2>
   </div>
@@ -45,20 +45,24 @@ layout: default
         </div>
 
         {% for product_hash in site.data.products %}
-          {% assign product = product_hash[1] %}
+        {% assign product = product_hash[1] %}
           {% if product.ident == page.ident %}
-            <a href="#">
-              <div class="buy">
-                Buy this&nbsp;<span class="text-uppercase">{{ page.title }}</span>
-              </div>
-            </a>
+          {% for type in product.types %}
+          <!--
+                <a href="{{type.etsylink}}">
+                  <div class="buy">
+                    Buy this &nbsp;<span class="text-uppercase">{{ page.title }}</span>
+                  </div>
+                </a>
+            -->
+            {% endfor %}
           {% endif %}
         {% endfor %}
       </div>
       <div class="col-md-3">
         {{ content }}
           {% for product_hash in site.data.products %}
-            {% assign product = product_hash[1] %}
+          {% assign product = product_hash[1] %}
               {% if product.ident == page.ident %}
                 <a id="showDutch">Nederlandse product uitleg</a>
                 <div class="dutchdescription">
@@ -71,6 +75,6 @@ layout: default
         </div>
       </div>
     </div>
-<div class="row">&nbsp;</div>
-<div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
+  <div class="row">&nbsp;</div>
 </div>

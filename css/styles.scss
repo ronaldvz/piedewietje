@@ -151,7 +151,6 @@ body {
         font-style: italic;
         text-transform: none;
         margin-left: 10px;
-
       }
 
       span:nth-of-type(2) {
@@ -265,4 +264,24 @@ body {
   .rust {
     color: $rust;
   }
+
+  .hidden {
+    display: none;
+  }
+
+  .shown {
+    display: inline;
+  }
+  
+  .press {
+
+    hr {
+      margin: 43px 0px 43px 0px;
+    }
+
+    .press-photo img {
+      width: 370px;
+    }
+  }
+  
 }
