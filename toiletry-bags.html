@@ -26,7 +26,7 @@ title: toiletry-bags
           {% if forloop.first %}
             <div class="col-md-4 spacer">
               <div class="home-image">
-                <a href="{{product.producturl}}">
+                <a href="{{product.producturl}}#{{ type.cssclass }}">
                   <img src="{{image.url}}">
                   <h2>{{product.productname}}
                     <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
