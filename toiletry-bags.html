@@ -9,22 +9,21 @@ title: toiletry-bags
 
     {% if product.ident == post.ident %}
 
-    {% if product.category == 'toiletry-bags'%} 
-
-    {% capture count %}{{ count | plus: '1' }}{% endcapture %}
-
-    {% if count == "1" %}
-    <div class="row">
-    {% endif %}
-
-      {% for type in product.types %}
-
-        {% if count == 1 %}
-        <div class="row">
-        {% endif %}
+      {% if product.category == 'toiletry-bags'%} 
 
         {% capture count %}{{ count | plus: '1' }}{% endcapture %}
 
+        {% if count == "1" %}
+          <div class="row">
+        {% endif %}
+
+        {% for type in product.types %}
+
+          {% if count == 1 %}
+            <div class="row">
+          {% endif %}
+
+          {% capture count %}{{ count | plus: '1' }}{% endcapture %}
           
           {% for image in type.images %}
             {% if forloop.first %}
@@ -43,8 +42,10 @@ title: toiletry-bags
           {% endfor %}
 
         {% endfor %}
-      {% if forloop.last %}
-        </div>
+        {% if forloop.last %}
+          </div>
+        {% endif %}
+
       {% endif %}
     {% endif %}
   {% endfor %}
