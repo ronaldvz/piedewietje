@@ -2,8 +2,10 @@
 layout: default
 title: index
 ---
-{% for product_hash in site.data.products |jsonify | sort:"sort_order" %}
-  {% assign product = product_hash[1] %}
+
+{% for post in site.posts %}
+
+  {% assign product = site.data.products[page.ident] %}
 
   {% if forloop.first %}
     <div class="row">

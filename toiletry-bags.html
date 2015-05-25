@@ -2,6 +2,15 @@
 layout: default
 title: toiletry-bags
 ---
+
+{% for post in site.posts %}
+
+{{post.ident}}<br/>
+
+{% assign product = site.data.products[page.ident] %}
+
+{% endfor %}
+
 {% for product_hash in site.data.products | reverse %}
   {% assign product = product_hash[1] %}
 
