@@ -4,7 +4,7 @@ title:  "Toiletry Bag"
 ident: "toiletry-bag-medium"
 size: "Medium"
 titlenl: "Toilettas"
-date:   2014-07-19 18:00:04
+date:   2014-07-18 18:00:04
 ---
 The toiletry bag is handmade and unique details. 
 No toiletry bag is exactly the same. The inside has a large pocket on both sides with a storage compartment.

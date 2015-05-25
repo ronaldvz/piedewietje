@@ -4,7 +4,7 @@ title:  "Toiletry Bag"
 ident: "toiletry-bag-large"
 size: "Large"
 titlenl: "Toilettas"
-date:   2014-07-19 23:08:04
+date:   2014-07-14 23:08:04
 ---
 The toiletry bag is handmade and has unique details. No toiletry bag is exactly the same. The bag can be used in different ways, folded into one another which he is compact to carry and expands when it is in use at the sink. Also, the bag has a handle to carry it easily. The inside has a large pocket on both sides with a storage compartment.
 
