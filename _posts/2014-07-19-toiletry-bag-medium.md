@@ -2,6 +2,7 @@
 layout: product
 title:  "Toiletry Bag"
 ident: "toiletry-bag-medium"
+product: toiletrybagmedium
 size: "Medium"
 titlenl: "Toilettas"
 date:   2014-07-18 18:00:04

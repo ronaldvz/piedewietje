@@ -2,39 +2,43 @@
 layout: default
 title: index
 ---
-
 {% for post in site.posts %}
+  {% for product_hash in site.data.products %}
 
-  {% assign product = site.data.products[page.ident] %}
+    {% assign product = product_hash[1] %}
 
-  {% if forloop.first %}
-    <div class="row">
-  {% endif %}
+    {% if product.ident == post.ident %}
 
-    {% for type in product.types %}
-      {% assign mod = forloop.index | modulo:3 %}
-      
-      {% for image in type.images %}
-        {% if forloop.first %}
-          <div class="col-md-4 spacer">
-            <div class="home-image">
-              <a href="{{product.producturl}}#{{ type.cssclass }}">
-                  <img src="{{image.url}}">
-                  <h2>{{product.productname}}
-                    <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
-                    {% if type.size %}<span class="productsize">[{{type.size}}]</span>{% endif %}
-                  </h2>
-              </a>
+      {% if forloop.first %}
+        <div class="row">
+      {% endif %}
+
+      {% for type in product.types %}
+        {% assign mod = forloop.index | modulo:3 %}
+        
+        {% for image in type.images %}
+          {% if forloop.first %}
+            <div class="col-md-4 spacer">
+              <div class="home-image">
+                <a href="{{product.producturl}}#{{ type.cssclass }}">
+                    <img src="{{image.url}}">
+                    <h2>{{product.productname}}
+                      <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
+                      {% if type.size %}<span class="productsize">[{{type.size}}]</span>{% endif %}
+                    </h2>
+                </a>
+              </div>
             </div>
-          </div>
-        {% endif %}
+          {% endif %}
         {% endfor %}
+      {% endfor %}
 
+      {% if forloop.last %}
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
-    {% endfor %}
-  {% if forloop.last %}
-    </div>
-  {% endif %}
 {% endfor %}
 
 <div class="row">&nbsp;</div>
