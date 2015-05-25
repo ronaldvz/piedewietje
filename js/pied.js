@@ -26,6 +26,9 @@ function showCarousel(color) {
   //hide other carousels
   $(".type").hide();
 
+  //hide buy buttons
+  $(".buy").hide();
+
   //show correct one
   $("." + color).fadeIn();
 
