@@ -2,7 +2,7 @@
 layout: default
 title: toiletry-bags
 ---
-{% for product_hash in site.data.products  %}
+{% for product_hash in site.data.products | reverse %}
   {% assign product = product_hash[1] %}
 
   {% if product.category == 'toiletry-bags'%} 
