@@ -2,47 +2,52 @@
 layout: default
 title: toiletry-bags
 ---
-{% for product_hash in site.data.products | reverse %}
-  {% assign product = product_hash[1] %}
+{% for post in site.posts %}
+  {% for product_hash in site.data.products %}
 
-  {% if product.category == 'toiletry-bags'%} 
+    {% assign product = product_hash[1] %}
 
-  {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+    {% if product.ident == post.ident %}
 
-  {% if count == "1" %}
-  <div class="row">
-  {% endif %}
+    {% if product.category == 'toiletry-bags'%} 
 
-    {% for type in product.types %}
+    {% capture count %}{{ count | plus: '1' }}{% endcapture %}
 
-      {% if count == 1 %}
-      <div class="row">
-      {% endif %}
-
-      {% capture count %}{{ count | plus: '1' }}{% endcapture %}
-
-        
-        {% for image in type.images %}
-          {% if forloop.first %}
-            <div class="col-md-4 spacer">
-              <div class="home-image">
-                <a href="{{product.producturl}}#{{ type.cssclass }}">
-                  <img src="{{image.url}}">
-                  <h2>{{product.productname}}
-                    <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
-                    <span class="productsize">[{{type.size}}]</span>
-                  </h2>
-                </a>
-              </div>
-            </div>
-          {% endif %}
-        {% endfor %}
-
-      {% endfor %}
-    {% if forloop.last %}
-      </div>
+    {% if count == "1" %}
+    <div class="row">
     {% endif %}
-  {% endif %}
+
+      {% for type in product.types %}
+
+        {% if count == 1 %}
+        <div class="row">
+        {% endif %}
+
+        {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+
+          
+          {% for image in type.images %}
+            {% if forloop.first %}
+              <div class="col-md-4 spacer">
+                <div class="home-image">
+                  <a href="{{product.producturl}}#{{ type.cssclass }}">
+                    <img src="{{image.url}}">
+                    <h2>{{product.productname}}
+                      <span class="producttype" style="color: {{type.color}};">{{type.name}}</span>
+                      <span class="productsize">[{{type.size}}]</span>
+                    </h2>
+                  </a>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+
+        {% endfor %}
+      {% if forloop.last %}
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
 <div class="row">&nbsp;</div>
