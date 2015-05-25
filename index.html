@@ -2,7 +2,7 @@
 layout: default
 title: index
 ---
-{% for product_hash in site.data.products | sort:"ident" | reverse %}
+{% for product_hash in site.data.products | sort:"productname"%}
   {% assign product = product_hash[1] %}
 
   {% if forloop.first %}
