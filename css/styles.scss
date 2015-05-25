@@ -207,8 +207,12 @@ body {
           padding-left: 0px;
         }
         li {
-          width: 70px;
+          min-width: 70px;
           float: left;
+
+          .blancnoir {
+            margin-right: 22px;
+          }
         }
       }
     }
