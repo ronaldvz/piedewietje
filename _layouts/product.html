@@ -47,14 +47,12 @@ layout: default
         {% for product_hash in site.data.products %}
         {% assign product = product_hash[1] %}
           {% if product.ident == page.ident %}
-          {% for type in product.types %}
-          <!--
-                <a href="{{type.etsylink}}">
-                  <div class="buy">
-                    Buy this &nbsp;<span class="text-uppercase">{{ page.title }}</span>
-                  </div>
-                </a>
-            -->
+            {% for type in product.types %}
+              <a href="{{type.etsylink}}" target="_blank">
+                <div class="buy {{ type.cssclass }}">
+                  Buy this &nbsp;<span class="text-uppercase">{{ page.title }}</span>
+                </div>
+              </a>
             {% endfor %}
           {% endif %}
         {% endfor %}
