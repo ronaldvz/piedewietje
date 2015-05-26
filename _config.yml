@@ -5,8 +5,8 @@ titlesubnl: / Handgemaakte tassen
 email: info@piedewietje.nl
 baseurl: ""
 url: "http://www.piedewietje.nl"
-#twitter_username: jekyllrb
-#github_username:  jekyll
+instagram: "https://instagram.com/piedewietje/"
+facebook: "https://www.facebook.com/pages/Piedewietje/768414159890906"
 
 # Build settings
 markdown: kramdown
