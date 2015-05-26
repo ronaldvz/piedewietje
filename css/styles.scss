@@ -14,10 +14,29 @@ body {
     }
   }
 
-  .navbar-default .navbar-nav > li > a {
-    font-size: 12pt;
-  }
+  .navbar-default {
+    .navbar-nav > li > a {
+        font-size: 12pt;
+    }
 
+    ul.social {
+      float: right;
+      margin-top: 10px;
+      li {
+        float: right;
+        margin-left: 10px;
+        a {
+          font-style: italic;
+          font-family: Garamond;
+          font-size: 14pt;
+          color: gray;
+          font-weight: 100;
+        }
+        
+      }
+    }
+
+  } 
   .rule {
     margin-left: 20px;
   }
@@ -279,11 +298,9 @@ body {
   }
   
   .press {
-
     hr {
       margin: 43px 0px 43px 0px;
     }
-
   }
-  
+ 
 }
